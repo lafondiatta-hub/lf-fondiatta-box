@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fondiatta Box | Catering a domicilio para tu evento | La Fondiatta</title>
+<meta name="description" content="Combos de catering a domicilio para cumpleaños, recibidas, after office y reuniones de oficina. Elegís el combo, nos decís cuántos son y llega todo listo para servir.">
+<link rel="canonical" href="https://lafondiatta-hub.github.io/lf-fondiatta-box/">
+<meta property="og:title" content="Fondiatta Box | La Fondiatta">
+<meta property="og:description" content="Vos festejás. Nosotros nos ocupamos de todo.">
+<meta property="og:image" content="https://lafondiatta-hub.github.io/lf-fondiatta-box/assets/hero.jpg">
+<meta property="og:type" content="website">
+<style>
+@font-face{font-family:'Organetto';src:url('assets/fuentes/Organetto-BoldSemiExt.ttf') format('truetype');font-weight:700;font-display:swap}
+@font-face{font-family:'Haas';src:url('assets/fuentes/NeueHaasDisplayRoman.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:'Haas';src:url('assets/fuentes/NeueHaasDisplayMediu.ttf') format('truetype');font-weight:600;font-display:swap}
+@font-face{font-family:'Nineties';src:url('assets/fuentes/PerfectlyNineties-RegularItalic.otf') format('opentype');font-style:italic;font-display:swap}
+
+:root{
+  --carbon:#141210; --tiza:#F2F0EE; --beige:#E1D9C8; --marron:#9B826A; --oro:#D4A843;
+  --pad:clamp(22px,5vw,80px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--carbon);color:var(--tiza);font-family:'Haas',-apple-system,Helvetica,Arial,sans-serif;
+     -webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+
+.wrap{max-width:1280px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+
+/* ---------- portada ---------- */
+.hero{position:relative}
+.hero img{width:100%;height:auto}
+.hero .bajo{padding:clamp(26px,4vw,44px) 0 0;text-align:center}
+
+.btn{display:inline-block;background:var(--tiza);color:#141210;text-decoration:none;
+     font-weight:600;font-size:clamp(12px,1.1vw,14px);letter-spacing:.2em;text-transform:uppercase;
+     padding:18px 40px;transition:background .2s,transform .2s}
+.btn:hover{background:var(--oro);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--tiza);border:1px solid rgba(242,240,238,.4)}
+.btn.ghost:hover{background:var(--tiza);color:#141210}
+
+/* ---------- ritmo ---------- */
+section{padding:clamp(64px,9vw,130px) 0}
+.eyebrow{font-size:11px;letter-spacing:.44em;text-transform:uppercase;color:var(--oro);margin-bottom:18px}
+h2{font-family:'Haas';font-weight:600;font-size:clamp(30px,4.6vw,58px);line-height:1.03;letter-spacing:-.025em;margin-bottom:22px}
+h2 .it{font-family:'Nineties';font-style:italic;font-weight:400;letter-spacing:0}
+.lead{font-size:clamp(17px,1.55vw,21px);line-height:1.62;max-width:44ch;color:var(--beige)}
+.centro{text-align:center}
+.centro .lead{margin-left:auto;margin-right:auto}
+
+/* ---------- banda full bleed ---------- */
+.banda{position:relative;width:100%;
+       height:clamp(300px,52vw,620px);overflow:hidden}
+.banda img{width:100%;height:100%;object-fit:cover;object-position:center 52%}
+
+/* ---------- grillas ---------- */
+.trio,.duo{display:grid;gap:clamp(12px,1.6vw,22px)}
+.trio{grid-template-columns:repeat(3,1fr)}
+.duo{grid-template-columns:repeat(2,1fr)}
+.trio figure,.duo figure{overflow:hidden;background:#1c1917}
+.trio img,.duo img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
+.trio figure{aspect-ratio:3/4}
+.duo figure{aspect-ratio:4/3}
+.trio figure:hover img,.duo figure:hover img{transform:scale(1.05)}
+
+.pilares{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,48px);margin-top:52px}
+.pilar{border-top:2px solid var(--oro);padding-top:20px}
+.pilar h3{font-family:'Haas';font-weight:600;font-size:clamp(18px,1.7vw,23px);margin-bottom:10px;letter-spacing:-.01em}
+.pilar p{font-size:15.5px;line-height:1.65;color:var(--beige);opacity:.82}
+
+.ocasiones{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(16px,2vw,30px);margin-top:48px}
+.oca{border-top:1px solid rgba(242,240,238,.22);padding-top:16px}
+.oca strong{display:block;font-weight:600;font-size:16px;margin-bottom:7px}
+.oca span{font-size:14px;line-height:1.55;color:var(--beige);opacity:.72}
+
+.pasos{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,52px);margin-top:52px}
+.paso .n{font-family:'Organetto';font-size:clamp(38px,4.4vw,62px);color:var(--oro);line-height:1;margin-bottom:14px}
+.paso h3{font-family:'Haas';font-weight:600;font-size:clamp(18px,1.7vw,23px);margin-bottom:9px;letter-spacing:-.01em}
+.paso p{font-size:15.5px;line-height:1.65;color:var(--beige);opacity:.82}
+
+/* ---------- cierre ---------- */
+.cierre{background:#0d0c0b}
+.tag{font-family:'Organetto';font-size:clamp(14px,2.6vw,34px);letter-spacing:.06em;color:var(--oro);line-height:1.3}
+footer{padding:44px 0 60px;border-top:1px solid rgba(242,240,238,.12);text-align:center}
+footer p{font-size:13px;color:var(--beige);opacity:.6;line-height:1.9}
+footer a{color:var(--oro);text-decoration:none}
+footer a:hover{text-decoration:underline}
+
+/* ---------- responsive ---------- */
+@media (max-width:820px){
+  .trio{grid-template-columns:repeat(2,1fr)}
+  .trio figure:nth-child(3){grid-column:span 2;aspect-ratio:16/9}
+  .pilares,.pasos{grid-template-columns:1fr;gap:34px}
+  .ocasiones{grid-template-columns:repeat(2,1fr)}
+  .lead{max-width:none}
+}
+@media (max-width:520px){
+  .duo{grid-template-columns:1fr}
+  .ocasiones{grid-template-columns:1fr}
+  .btn{padding:16px 28px;letter-spacing:.16em}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img src="assets/hero.jpg" alt="Fondiatta Box — Vos festejás, nosotros nos ocupamos de todo" fetchpriority="high">
+  <div class="wrap bajo">
+    <a class="btn" href="https://www.lafondiatta.com/fondiatta-box/">Ver los combos</a>
+  </div>
+</header>
+
+<section class="wrap">
+  <p class="eyebrow">El concepto</p>
+  <h2>Tu mesa, <span class="it">resuelta</span>.</h2>
+  <p class="lead">Elegís un combo, nos decís cuántos son y llegamos con todo listo para servir.
+     Sin cocinar, sin cotizar, sin coordinar proveedores. Lo abrís y ya está.</p>
+  <div class="trio" style="margin-top:52px">
+    <figure><img src="assets/fotos/caja-fingerfood.jpg" alt="Caja de finger food armada" loading="lazy"></figure>
+    <figure><img src="assets/fotos/caja-break.jpg" alt="Cajas de El Break" loading="lazy"></figure>
+    <figure><img src="assets/fotos/picada.jpg" alt="Picada de fiambres y quesos" loading="lazy"></figure>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow">Por qué funciona</p>
+    <h2>Tres cosas, <span class="it">bien hechas</span>.</h2>
+    <div class="pilares">
+      <div class="pilar">
+        <h3>Llega listo</h3>
+        <p>Todo porcionado y presentado. Solo lo ponés en la mesa. Lo que necesita calor se hierve
+           veinte minutos en su propia bolsa.</p>
+      </div>
+      <div class="pilar">
+        <h3>A la medida de tu mesa</h3>
+        <p>Armamos el combo según cuántos sean. De diez a cuarenta personas, sin que te sobre
+           ni te falte.</p>
+      </div>
+      <div class="pilar">
+        <h3>De nuestra cocina</h3>
+        <p>Las mismas manos que hacen catering para Danone, PedidosYa y Microsoft, ahora
+           en tu casa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="banda"><img src="assets/fotos/banda-fajitas.jpg" alt="Fajitas con nachos, guacamole y tortillas" loading="lazy"></div>
+
+<section class="wrap">
+  <p class="eyebrow">Para cuándo</p>
+  <h2>Cualquier motivo <span class="it">es bueno</span>.</h2>
+  <p class="lead">Si hay gente, hay Box.</p>
+  <div class="ocasiones">
+    <div class="oca"><strong>Cumpleaños</strong><span>Desde una mesa dulce hasta una picada para brindar.</span></div>
+    <div class="oca"><strong>Recibidas</strong><span>Para celebrar el logro sin mover un dedo en la cocina.</span></div>
+    <div class="oca"><strong>Reuniones</strong><span>Juntadas, previas y after office con todo servido.</span></div>
+    <div class="oca"><strong>Corporativo</strong><span>Reuniones de equipo, capacitaciones y cierres de año.</span></div>
+    <div class="oca"><strong>Festejos</strong><span>Cualquier excusa sirve: nosotros ponemos la mesa.</span></div>
+  </div>
+  <div class="duo" style="margin-top:56px">
+    <figure><img src="assets/fotos/milanesas.jpg" alt="Milanesas caseras con panes y salsas" loading="lazy"></figure>
+    <figure><img src="assets/fotos/break-mesa.jpg" alt="Mesa dulce y salada de El Break" loading="lazy"></figure>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow">Cómo funciona</p>
+    <h2>Tres pasos <span class="it">y listo</span>.</h2>
+    <div class="pasos">
+      <div class="paso"><div class="n">01</div><h3>Elegís el combo</h3>
+        <p>Finger food, milanesas, bondiola, fajitas o coffee break.</p></div>
+      <div class="paso"><div class="n">02</div><h3>Nos decís cuántos son</h3>
+        <p>De diez a cuarenta personas. Nosotros calculamos el resto.</p></div>
+      <div class="paso"><div class="n">03</div><h3>Llega listo</h3>
+        <p>Vos no te ocupás de nada.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="banda"><img src="assets/fotos/banda-empanaditas.jpg" alt="Empanaditas salteñas recién hechas" loading="lazy"></div>
+
+<section class="cierre">
+  <div class="wrap centro">
+    <p class="eyebrow">Entrega</p>
+    <h2>Pedilo con <span class="it">48 hs</span> de anticipación.</h2>
+    <p class="lead">Te lo llevamos de lunes a sábados. Envío sin cargo en compras desde $200.000.</p>
+    <p style="margin-top:38px">
+      <a class="btn" href="https://www.lafondiatta.com/fondiatta-box/">Ver los combos</a>
+      <a class="btn ghost" style="margin-left:12px" href="https://wa.me/5491123921455?text=Hola!%20Quiero%20pedir%20un%20Fondiatta%20Box.">Escribinos</a>
+    </p>
+    <p class="tag" style="margin-top:64px">Pasión por tus momentos</p>
+  </div>
+</section>
+
+<footer class="wrap">
+  <p>
+    <a href="https://www.lafondiatta.com/">lafondiatta.com</a> ·
+    <a href="https://www.instagram.com/lafondiatta/">@lafondiatta</a> ·
+    <a href="https://wa.me/5491123921455">+54 9 11 2392 1455</a><br>
+    La Fondiatta — Catering &amp; Eventos
+  </p>
+</footer>
+
+</body>
+</html>
